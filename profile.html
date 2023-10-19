@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
+  * {
+  box-sizing: border-box;
+}
     .profile {
         display: grid;
     }
@@ -43,6 +46,33 @@
   transition: 0.8s;
   text-decoration: underline;
 }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+
+  [class*="col-"] {
+  width: 100%;
+  }
+}
+@media only screen and (max-width: 400) {
+
+  [class*="col-"] {
+  width: 100%;
+  }
+}
+
+
+  /*.row .col-lg-3*/
 </style>
 
 <body>
@@ -103,41 +133,11 @@
                               </ul>
                         </div>
                         <hr>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 p-4">
-                            <div class="card" style="width: 10rem;">
-                                <img src="cad3.cf8ccf93-b69b-442e-a783-11b4d1519e71" class="card-img-top" alt="...">
-                              </div>
+                        <div>
+                          <h4 class="lead text-muted">
+                            NO AVAILABLE GAMES
+                          </h4>
                         </div>
-                        <div class="col-3 p-4">
-                            <div class="card" style="width: 10rem;">
-                                <img src="card_10.jpg" class="card-img-top" alt="...">
-                              </div>
-                        </div>
-                        <div class="col-3 p-4">
-                            <div class="card" style="width: 10rem;">
-                                <img src="card_1.3a37ac18-73a3-42f9-813e-fefef8ef07e5" class="card-img-top" alt="...">
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3 p-4">
-                            <div class="card" style="width: 10rem;">
-                                <img src="card_4.794c9932-4346-4da4-86ed-5e5c1110a544" class="card-img-top" alt="...">
-                              </div>
-                        </div>
-                        <div class="col-3 p-4">
-                            <div class="card" style="width: 10rem;">
-                                <img src="card5.b5be9148-05ab-41a0-af06-5a2e7e03d0f3" class="card-img-top" alt="...">
-                              </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12"></div>
                     </div>
                 </div>
             </div>
